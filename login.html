@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- irei comentar nesse codigo inteiro mostrando como eu fiz esse
+     codigo passo a passo!-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!--adicionei divs e containers para separar os elementos, adicionei 2
+    inputs, um de texto e outro de numero, para o usuario colocar os valores
+    desejados, esse (form action) basicamente enfia os resultados que foram 
+    coletados dos inputs para outro site que eu  selecionei, no caso "shopping.html"-->
+    <div class="container">
+        <h1>Login</h1> 
+          <form action="shopping.html"  method="GET">
+            <div class="inputs">
+                <p>Usuario: </p>
+                <input type="text" id="user">
+            </div>
+            <div class="inputs">
+                <p>Valor desejado: </p>
+                <input type="number" id="valor">
+            </div>
+            <input type="button" id="confirmar" value="confimar" onclick="submit()">
+            <p id="mensagem"></p>
+            </form>
+    </div>
+    <!--linkei o js aqui, nd dms-->
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+/*estilos do container*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*titulo*/
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*div dos produtos*/
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/*caracteristicas dos produtos*/
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33% - 40px);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*quando o produto for selecionado*/
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+/*texto dos produtos*/
+.produto h2 {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 10px;
+}
+/*paragrafo dos produtos*/
+.produto p {
+  color: #666;
+  margin-bottom: 15px;
+}
+/*preço dos produtos*/
+.produto span {
+  display: block;
+  font-size: 1.2em;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/*input dos produtos*/
+.produto input[type="button"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+/*input dos produtos quando o mouse estiver encima*/
+.produto input[type="button"]:hover {
+  background-color: #218838;
+}
+
+
+#dados {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #d3d3d3;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

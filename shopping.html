@@ -1,0 +1,70 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+<!--mostra as  informaçoes do usuario-->
+  <div id="dados">
+    <h2 id="nome"></h2>
+     <h2 id="valor"></h2>
+  </div>
+
+  
+<!--onde todos os elementos vao ficar-->
+  <div class="container">
+    <h1>lanchonete do allyson</h1>  
+    <!-- cada uma dessas divs dentro da class produtos equivale a um produto na 
+     loja, eles tem seu preço, função propria, ids, value, e tudo mais-->
+    <div class="produtos">
+        <div class="produto">
+            <h2>html à parmegiana.</h2>
+            <p>-html bem passado <br>-dor de cabeça <br>-queijo <br>-molho de tomate</p>
+            <span>R$ 11,00</span>
+            <input type="button" value="comprar" onclick="comprar1()">
+        </div>
+        <div class="produto">
+            <h2>css ao molho ingles</h2>
+            <p>-200hrs de tentando acertar o tamanho certo dos elementos<br>-molho ingles</p>
+            <span>R$ 12,00</span>
+            <input type="button" value="comprar" onclick="comprar2()">
+        </div>
+        <div class="produto">
+            <h2>javascript com molho de tomate</h2>
+            <p>(-obs:ao ingerir esse prato, espere uma dor de cabeça imensa ) <br>molho de tomate</p>
+            <span>R$ 13,00</span>
+            <input type="button" value="comprar" onclick="comprar3()">
+        </div>
+    </div>
+
+    <!--espaciamento apenas-->
+    <br>
+    <br>
+
+    <div class="produtos">
+        <div class="produto">
+            <h2>vs code mal passado</h2>
+            <p>-melhor aplicativo pra programar S2 <br>-mal passado</p>
+            <span>R$ 23,00</span>
+            <input type="button" value="comprar" onclick="comprar4()">
+        </div>
+        <div class="produto">
+            <h2>X burger de programação</h2>
+            <p>-dor nas costas <br>-erros no codigo <br>-e tudo q ha de bom</p>
+            <span>R$ 24,00</span>
+            <input type="button" value="comprar" onclick="comprar5()">
+        </div>
+        <div class="produto">
+            <h2>X burger de felicidade dos programadores</h2>
+            <p>-codigo pegou de primeira <br>-apenas isso é necessario</p>
+            <span>R$ 25,00</span>
+            <input type="button" value="comprar" onclick="comprar6()">
+        </div>
+    </div>
+</div>
+<!--linkando jsz-->
+    <script src="shopping.js"> </script>
+
+</body>
+</html>
